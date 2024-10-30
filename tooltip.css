@@ -1,0 +1,58 @@
+#tt {position:absolute; display:block;z-index:100;}
+#tttop {display:block; height:5px; margin-left:5px;}
+#ttcont {display:block; padding:2px 12px 3px 7px; margin-left:5px; background:#666; color:white}
+#ttbot {display:block; height:5px; margin-left:5px;}
+.glossary_referral_link {clear:both;float:none;font-size:8px;line-height:1.5;display: inline-block;padding: 3px;margin-top:20px;color:#bbb;text-decoration:none;font-weight:bold}
+.cmetg_poweredby {clear:both;float:none;font-size:8px;line-height:1.5;display: inline-block;padding: 3px;margin-top:20px;color:#bbb;text-decoration:none;font-weight:bold}
+.cmetg_poweredbylink:link{color:#bbb;text-decoration:none;}
+.cmetg_poweredbylink:visited{color:#bbb;text-decoration:none;}
+.cmetg_poweredbylink:hover{color:#bbb;text-decoration:none;}
+span.glossaryLink, a.glossaryLink {
+    text-decoration:none !important;
+    border-bottom: dotted 1px !important;
+}
+a.glossaryLink:hover {
+    border-bottom: solid 1px !important;
+    text-decoration:none !important;
+}
+
+/*FUTURE BUBBLE TOOLTIP CSS*/
+.bubble {
+	position: relative;
+	width: 350px;
+	height: 180px;
+	padding: 0px;
+	background: #FFFFFF;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
+	border: #000 solid 1px;
+}
+
+.bubble:after {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 0 10px 10px;
+	border-color: #FFFFFF transparent;
+	display: block;
+	width: 0;
+	z-index: 1;
+	margin-left: -10px;
+	top: -10px;
+	left: 5%;
+}
+
+.bubble:before {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 0 10px 10px;
+	border-color: #000 transparent;
+	display: block;
+	width: 0;
+	z-index: 0;
+	margin-left: -10px;
+	top: -11px;
+	left: 5%;
+}
